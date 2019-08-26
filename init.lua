@@ -68,7 +68,7 @@ function moognu.generate(minp, maxp, seed)
 	for i = 1, max_num_moognus do
 		if pr:next(0, 1000) == 0 then
 			local x0 = pr:next(minp.x, maxp.x)
-			local y0 = pr:next(minp.y, maxp.y)
+			local y0 = pr:next(y_min, y_max)
 			local z0 = pr:next(minp.z, maxp.z)
 			local p0 = {x = x0, y = y0, z = z0}
 			moognu.place(p0, pr:next(0, 3), pr:next(3, 15))
